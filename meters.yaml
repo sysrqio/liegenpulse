@@ -1,0 +1,35 @@
+site: Stadtwerke Demo
+buildings:
+  - id: main-hall
+    name: Rathaus Hauptgebäude
+    has_heat: true
+    meters:
+      - id: electric-main
+        type: electricity
+        protocol: modbus
+        address: "192.168.1.10:502"
+        carrier: "Stadtwerke Netz GmbH"
+      - id: heat-district
+        type: heat
+        protocol: modbus
+        address: "192.168.1.12:502"
+        carrier: "Fernwärme AG"
+      - id: water-main
+        type: water
+        protocol: mqtt
+        topic: municipality/meters/main-hall/water
+        carrier: "Wasserwerk"
+  - id: office-a
+    name: Verwaltungsgebäude A
+    has_heat: true
+    meters:
+      - id: electric-a
+        type: electricity
+        protocol: modbus
+        address: "192.168.1.20:502"
+        carrier: "Stadtwerke Netz GmbH"
+      - id: heat-a
+        type: heat
+        protocol: mqtt
+        topic: municipality/meters/office-a/heat
+        carrier: "Fernwärme AG"

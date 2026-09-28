@@ -1,0 +1,9 @@
+{
+  "main-hall/electric-main": true,
+  "main-hall/heat-district": true,
+  "office-a/electric-a": true,
+  "office-a/heat-a": false,
+  "192.168.1.10:502": true,
+  "192.168.1.11:502": false,
+  "municipality/meters/office-a/heat": false
+}

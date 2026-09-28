@@ -1,0 +1,8 @@
+site: bad
+buildings:
+  - id: b1
+    meters:
+      - id: m1
+        type: electricity
+        protocol: modbus
+        address: ""

@@ -1,0 +1,15 @@
+site: test-site
+buildings:
+  - id: b1
+    has_heat: true
+    meters:
+      - id: e1
+        type: electricity
+        protocol: modbus
+        address: "10.0.0.1:502"
+        carrier: "Netz"
+      - id: h1
+        type: heat
+        protocol: modbus
+        address: "10.0.0.2:502"
+        carrier: "HeatCo"
